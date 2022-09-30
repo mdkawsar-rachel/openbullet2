@@ -8,7 +8,7 @@ RUN apt install git curl python3-pip ffmpeg -y
 
 RUN cd /
 
-RUN wget wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 
 RUN dpkg -i packages-microsoft-prod.deb
 RUN apt install apt-transport-https -y
