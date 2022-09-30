@@ -12,9 +12,9 @@ RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-p
 
 RUN apt install ./packages-microsoft-prod.deb -y
 RUN apt install apt-transport-https -y
-RUN apt update && apt upgrade -y
-RUN apt install dotnet-runtime-3.1 -y
-
+RUN apt-get update
+RUN apt-get install -y dotnet-sdk-6.0
+RUN apt-get install -y dotnet-runtime-6.0
 RUN wget https://github.com/openbullet/OpenBullet2/releases/download/0.2.4/OpenBullet2.zip
 
 RUN unzip OpenBullet2.zip
