@@ -18,5 +18,5 @@ RUN wget https://github.com/openbullet/OpenBullet2/releases/download/0.2.4/OpenB
 
 RUN unzip OpenBullet2.zip
 RUN rm OpenBullet2.zip
-
+EXPOSE 5000
 CMD dotnet OpenBullet2.dll
