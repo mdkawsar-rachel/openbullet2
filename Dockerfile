@@ -10,7 +10,7 @@ RUN cd /
 
 RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 
-RUN dpkg -i packages-microsoft-prod.deb
+RUN apt install ./packages-microsoft-prod.deb -y
 RUN apt install apt-transport-https -y
 RUN apt install dotnet-runtime-3.1 -y
 
